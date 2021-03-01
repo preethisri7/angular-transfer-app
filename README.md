@@ -2,7 +2,7 @@
 
 Inside the project folder:
 1. npm install
-2. npm build
+2. npm run build
 3. npm start ------> project runs on : http://localhost:4200/
 
 I have used Mongodb Local :
