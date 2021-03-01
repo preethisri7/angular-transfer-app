@@ -41,7 +41,7 @@ var router = express.Router();
 
 // test : http://localhost:3000/api
 router.get('/', function(req, res) {
-  res.sendFile(process.cwd()+"../dist/angular-transfer-app/")
+  res.json({ message: 'Our API!' });
 });
 
 //to get all transfers: http://localhost:3000/api/transfers
