@@ -1,0 +1,22 @@
+<div class="col-md-8 mb-4">
+  <h4 class="d-flex justify-content-between align-items-center mb-3">
+    <span class="text-muted">Your Transactions</span>
+    <span (click)='onAddTransfer()' class="material-icons">add_box</span>
+  </h4>
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let transferList of transferLists">
+      <p class="icon deleteIcon" (click)='onDeleteTransfer(transferList.transfer_id)'><span class="material-icons">delete_forever</span></p>
+      <p class="icon editIcon" (click)='onEditTransfer(transferList.transfer_id)'><span class="material-icons">mode</span></p>
+      <div>
+        <h4 class="my-0">Name:{{transferList.accountname}}</h4>
+        <small class="text-muted">IBAN:{{transferList.iban}}</small>
+      <div>
+        <small class="text-muted">Date:{{transferList.transferdate}}</small>
+      </div>
+
+        <small class="text-muted">Note:{{transferList.transfernote}}</small>
+      </div>
+      <span class="text-muted amount">{{transferList.transferamount | currency: 'EUR':'symbol':'1.2-2'}}</span>
+    </li>
+  </ul>
+</div>

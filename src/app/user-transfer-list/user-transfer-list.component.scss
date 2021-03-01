@@ -1,0 +1,16 @@
+.addTransfer {
+  pointer-events: all;
+  width: auto;
+}
+ .icon {
+  position: absolute;
+  right: 0;
+  &.deleteIcon {
+    color: red;
+    top:40px;
+  }
+ }
+
+.amount {
+  margin-right: 50px;
+}

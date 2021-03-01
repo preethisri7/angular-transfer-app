@@ -1,0 +1,77 @@
+<h1 *ngIf="isAddMode">Add Transfer</h1>
+<h1 *ngIf="!isAddMode">Edit Transfer</h1>
+<form class="form-horizontal" (ngSubmit)="onSubmit(addTransferdata.value)" #addTransferdata="ngForm" ngNativeValidate>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="accountname">Name:</label>
+    <div class="col-sm-10">
+      <input id="accountname" class="form-control" ngModel name="accountname" required >
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="iban">IBAN</label>
+    <div class="col-sm-10">
+      <input id="iban" class="form-control" name="iban" #iban="ngModel" type="text" ibanValidator [(ngModel)]="ibanValue" required>
+      <div class="alert alert-danger" *ngIf="iban.invalid && (iban.dirty || iban.touched)">
+        <div *ngIf="iban.errors.required">
+          IBAN is required.
+        </div>
+        <div *ngIf="iban.errors.iban">
+          IBAN is invalid
+        </div>
+        <div *ngIf="iban.valid && (iban.dirty || iban.touched)">
+        IBAN is valid.
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="transferdate">Date</label>
+      <div class="input-group col-sm-10">
+        <input class="form-control" type='text'
+                 name="transferdate" [(ngModel)]="transferdateValue" ngbDatepicker #transferdate="ngbDatepicker" required>
+                 <div class="input-group-append calendarInput">
+                  <div class="input-group-append">
+                    <span class="material-icons" (click)="transferdate.toggle()">calendar_today</span>
+                  </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="transferamount">Amount:</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" id="transferamount" ngModel name="transferamount" #amount="ngModel"  [(ngModel)]="amountValue"
+        minlength="2" maxlength="8" required/>
+      </div>
+      <div class="alert alert-danger" *ngIf="amount.invalid && (amount.dirty || amount.touched)">
+        <div *ngIf="amount.errors.minlength">
+          Amount should be minimum 5 character.
+        </div>
+        <div *ngIf="amount.errors.maxlength">
+          Amount should be maximum 8 character only.
+        </div>
+        <div *ngIf="amount.errors.required">
+          Amount is required.
+        </div>
+       </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="transfernote">Note:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="transfernote" name="transfernote" ngModel>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary backButton" routerLink="/home">Back</button>
+      </div>
+    </div>
+
+</form>
