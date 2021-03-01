@@ -23,7 +23,7 @@ app.all('/*', function (req, res, next) {
 
 // Online Database
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false');
+mongoose.connect('mongodb://localhost:27017/test');
 
 
 var db = mongoose.connection;
