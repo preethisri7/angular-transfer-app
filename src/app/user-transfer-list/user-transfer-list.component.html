@@ -1,8 +1,8 @@
-<div class="col-md-8 mb-4">
-  <h4 class="d-flex justify-content-between align-items-center mb-3">
-    <span class="text-muted">Your Transactions</span>
-    <span (click)='onAddTransfer()' class="material-icons">add_box</span>
-  </h4>
+<div class="col-md-8 mb-4 transferList">
+  <h2 class="justify-content-between align-items-center mb-3">
+    Your Transactions
+    <span (click)='onAddTransfer()' class="material-icons addIcon">add_box</span>
+  </h2>
   <ul class="list-group mb-3">
     <li class="list-group-item d-flex justify-content-between lh-condensed" *ngFor="let transferList of transferLists">
       <p class="icon deleteIcon" (click)='onDeleteTransfer(transferList.transfer_id)'><span class="material-icons">delete_forever</span></p>
