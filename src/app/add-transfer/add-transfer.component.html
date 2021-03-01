@@ -1,4 +1,5 @@
-<h1 *ngIf="isAddMode">Add Transfer</h1>
+<div class="transferForm">
+  <h1 *ngIf="isAddMode">Add Transfer</h1>
 <h1 *ngIf="!isAddMode">Edit Transfer</h1>
 <form class="form-horizontal" (ngSubmit)="onSubmit(addTransferdata.value)" #addTransferdata="ngForm" ngNativeValidate>
   <div class="form-group">
@@ -75,3 +76,5 @@
     </div>
 
 </form>
+
+</div>
