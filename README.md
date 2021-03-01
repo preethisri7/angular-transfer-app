@@ -9,6 +9,8 @@ I have used Mongodb Local :
 
 Please import this transfers.json to the db and in server/server.js change the link in ('mongoose.connect') line:26 
 
+IBAN are generated randomly using http://randomiban.com/?country=Germany
+
 Transaction List Page:
 ![image](https://user-images.githubusercontent.com/17137829/109500917-2be4d700-7a97-11eb-86cb-c5b82ba78a48.png)
 
