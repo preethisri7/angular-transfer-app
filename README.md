@@ -16,7 +16,8 @@ Transaction List Page:
 
 
 Add Transfer Page:
-![image](https://user-images.githubusercontent.com/17137829/109501115-70707280-7a97-11eb-8720-e7ebd3c45f16.png)
+![image](https://user-images.githubusercontent.com/17137829/109533233-4a0ffe80-7aba-11eb-892b-73266b60e299.png)
+
 
 
 Edit Transfer Page : Prepopulates the enterred info
