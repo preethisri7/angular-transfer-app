@@ -9,9 +9,9 @@
       <p class="icon editIcon" (click)='onEditTransfer(transferList.transfer_id)'><span class="material-icons">mode</span></p>
       <div>
         <h4 class="my-0">Name:{{transferList.accountname}}</h4>
-        <small class="text-muted">IBAN:{{transferList.iban}}</small>
+        <small class="text-muted">IBAN:{{transferList.iban | ibanFormatter}}</small>
       <div>
-        <small class="text-muted">Date:{{transferList.transferdate}}</small>
+        <small class="text-muted">Date:{{transferList.transferdate | date: "dd/MM/yyyy"}}</small>
       </div>
 
         <small class="text-muted">Note:{{transferList.transfernote}}</small>
