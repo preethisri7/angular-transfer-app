@@ -34,17 +34,17 @@ db.once('open', function() {
 });
 
 
-var Transfer = require('./app/models/transfer');
+var Transfer = require('./models/transfer');
 
 var router = express.Router();
 
 
 // test : http://localhost:3000/api
 router.get('/', function(req, res) {
-	res.json({ message: 'Home API' });
+  res.sendFile(process.cwd()+"../dist/angular-transfer-app/")
 });
 
-//to get all transfers: http://localhost:8080/api/transfers
+//to get all transfers: http://localhost:3000/api/transfers
 router.route('/transfers')
 
 	.post(function(req, res) {
