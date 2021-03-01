@@ -7,4 +7,4 @@ Inside the project folder:
 
 I have used Mongodb Local :
 
-Please import this sample json to the db and in server/server.js change the link in ('mongoose.connect') line:26 
+Please import this transfers.json to the db and in server/server.js change the link in ('mongoose.connect') line:26 

@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "603b86991513fe3cac7c8e5d"
+  },
+  "transfernote": "First transaction done",
+  "transferamount": "25000",
+  "transferdate": "3/1/2021",
+  "iban": "DE12500105170648489890",
+  "accountname": "Test1",
+  "__v": 0,
+  "transfer_id": "6eccb3e1-de14-4d72-8aa3-7c5afb22f545"
+},{
+  "_id": {
+    "$oid": "603beab728912f1cac51b3a5"
+  },
+  "transfernote": "Second Transaction",
+  "transferamount": "30000",
+  "transferdate": "1/13/2021",
+  "iban": "DE77500105173153313318",
+  "accountname": "Test2",
+  "transfer_id": "Tzy5w-BaBMu9h8S0GJeg8qlf",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603c35814dd22438b865ef88"
+  },
+  "transfernote": "Third transaction",
+  "transferamount": "4000",
+  "transferdate": "2/9/2021",
+  "iban": "DE19500105179336659484",
+  "accountname": "Test3",
+  "transfer_id": "_tFs9AqqQgn0MoG-rqKdyJ1m",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603c36204dd22438b865ef89"
+  },
+  "transfernote": "Fourth Transaction",
+  "transferamount": "3500",
+  "transferdate": "3/1/2021",
+  "iban": "DE37500105179325954531",
+  "accountname": "Test4",
+  "transfer_id": "1gXS4XMSvrgpC6DYLJS-b-5p",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603c36414dd22438b865ef8a"
+  },
+  "transfernote": "Fifth transaction",
+  "transferamount": "6000",
+  "transferdate": "3/1/2021",
+  "iban": "DE23500105171474626858",
+  "accountname": "Test5",
+  "transfer_id": "bJryRcXVdXJCbF-1_o_hso-z",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603c36914dd22438b865ef8b"
+  },
+  "transfernote": "Sixth Transaction",
+  "transferamount": "7000",
+  "transferdate": "3/1/2021",
+  "iban": "DE90500105175718151194",
+  "accountname": "Test6",
+  "transfer_id": "0BkmODL1iyIXus25XaQ6EKDC",
+  "__v": 0
+}]
