@@ -13,6 +13,4 @@ IBAN are generated randomly using http://randomiban.com/?country=Germany
 
 ![image](https://user-images.githubusercontent.com/17137829/109533233-4a0ffe80-7aba-11eb-892b-73266b60e299.png)
 
-![image](https://user-images.githubusercontent.com/17137829/109499894-c5ab8480-7a95-11eb-93bf-185ff9f15850.png)
-
 
